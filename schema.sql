@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS notes;
+
+CREATE TABLE notes (
+  id SERIAL PRIMARY KEY,
+  -- created_at DATETIME NOT NULL DEFAULT(GETDATE())
+  title VARCHAR(255),
+  body TEXT
+);
+
